@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Phrase Spammer by Davide Rasoli - 4DINF</h1>
+<div>
+    <label for="Frase">Inserisci la frase da spammare:</label>
+    <input name="Frase" #newphrase class="form-control">
+</div>
+<div>
+    <label for="Numero">Quante volte va spammata?</label>
+    <input name="Numero" #newnum class="form-control">
+</div>
+<button (click)="spamma(newphrase, newnum)" class="btn btn-success">
+    Spamma
+</button>
+<ul>
+    <li *ngFor="let frase of frasi">{{frase}}</li>
+</ul>
